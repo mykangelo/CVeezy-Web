@@ -5,6 +5,7 @@ import ImproveResume from './pages/uploader';
 import Builder from './pages/enter-details'; 
 import Homepage from './pages/homepage';
 import LoginPage from './pages/LoginPage'; // Import the LoginPage component
+import PrivacyPolicyPage from './pages/privacy-policy';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/enter-details" element={<Builder />} /> 
         <Route path="/builder" element={<Builder />} />
         <Route path="/login" element={<LoginPage />} /> {/* Add the new route here */}
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       </Routes>
     </Router>
   );

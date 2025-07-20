@@ -242,36 +242,36 @@ const Homepage: React.FC = () => (
                   </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/cookie-policy"
                     className="hover:text-white transition-colors"
                   >
                     Cookie Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/terms-and-conditions"
                     className="hover:text-white transition-colors"
                   >
                     Terms and Conditions
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/subscription-terms"
                     className="hover:text-white transition-colors"
                   >
                     Subscription Terms
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#"
+                  <Link
+                    to="/contact"
                     className="hover:text-white transition-colors"
                   >
                     Contact us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -381,36 +381,36 @@ const Homepage: React.FC = () => (
                 </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/cookie-policy"
                   className="hover:text-white transition-colors"
                 >
                   Cookie Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/terms-and-conditions"
                   className="hover:text-white transition-colors"
                 >
                   Terms and Conditions
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/subscription-terms"
                   className="hover:text-white transition-colors"
                 >
                   Subscription Terms
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/contact"
                   className="hover:text-white transition-colors"
                 >
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
