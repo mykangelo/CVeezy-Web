@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Trash2, Plus, GripVertical } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 import Contacts from "./builder/cntc";
 import Experience from "./builder/expr";
@@ -204,6 +205,7 @@ const Skills: React.FC<SkillsTabProps> = ({
 const steps = ["Contacts", "Experience", "Education", "Skills", "Summary", "Finalize"];
 
 const EnterDetails: React.FC = () => {
+  const navigate = useNavigate();
   const [currentStep, setCurrentStep] = useState(0);
   const [skills, setSkills] = useState<Skill[]>([{ id: Date.now(), name: "", level: "Novice" }]);
   const [showExperienceLevel, setShowExperienceLevel] = useState(false);
@@ -299,12 +301,18 @@ const EnterDetails: React.FC = () => {
             Previous
           </button>
           <button
-            disabled={currentStep === steps.length - 1}
-            onClick={() => setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1))}
+            onClick={() => {
+              if (currentStep === steps.length - 1) {
+                navigate("/download");
+              } else {
+                setCurrentStep((prev) => Math.min(prev + 1, steps.length - 1));
+              }
+            }}
             className="bg-blue-500 text-white px-6 py-2 rounded-md disabled:opacity-50"
           >
             Next: {steps[currentStep + 1] || "Done"}
           </button>
+
         </div>
       </div>
 

@@ -7,6 +7,7 @@ import Homepage from './pages/homepage';
 import LoginPage from './pages/LoginPage'; // Import the LoginPage component
 import PrivacyPolicyPage from './pages/privacy-policy';
 import ContactPage from './pages/contact';
+import DownloadLayout from './pages/downloadpage/dowload-layout';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} /> {/* Add the new route here */}
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/contact" element={<ContactPage />} /> 
+        <Route path="/download" element={<DownloadLayout />} />
 
       </Routes>
     </Router>
